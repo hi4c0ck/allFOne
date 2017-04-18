@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALL.F1</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- Web Application Manifest -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Web Starter Kit">
+    <link rel="icon" sizes="192x192" href="images/hurum/allf1_icon.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="ALL.F1 site">
+    <link rel="apple-touch-icon" href="images/hurum/allf1_icon.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/hurum/allf1_icon.png">
+    <meta name="msapplication-TileColor" content="#2F3BA2">
+
+    <!-- Color the status bar on mobile devices -->
+    <meta name="theme-color" content="#44CDAA">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <!-- Material Design icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+    <!-- Material Design Lite page styles:
+    You can choose other color schemes from the CDN, more info here http://www.getmdl.io/customize/index.html
+    Format: material.color1-color2.min.css, some examples:
+    material.red-teal.min.css
+    material.blue-orange.min.css
+    material.purple-indigo.min.css
+    -->
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.brown-cyan.min.css">
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css">
+	<script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+
+	<script src="scripts/data.js"></script>
+
+    <!-- Your styles -->
+    <link rel="stylesheet" href="styles/main.css">
+ 
+      
+
+  </head>
+  <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+
+
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header"  >
+      <header class="mdl-layout__header mdl-layout__header--scroll " style="background-image:url(images/f1_back.jpg); background-size: 100% 100%;">
+          <section class="section--justify mdl-table-grid" style="padding-bottom: 0px ">
+          	<div class="mdl-grid   mdl-cell--12 mdl-shadow--2dp" style="padding-bottom: 0px">
+				<div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone"
+				style="padding-bottom: 0px">
+          			<div class="mdl-grid mdl-table-grid-iconbar"  >
+          			<div  class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone" >
+                		<div class="mdl-header-icon-cell mdl-cell mdl-cell--12-col-desktop mdl-cell--8-col-tablet mdl-cell--4-col-phone " align="middle">
+	                		<img class="just_hurum1" src="images/hurum/allf1_icon.png" style="width: 100%"  align="middle" >
+						</div>
+                		<div class="mdl-header-allf1title mdl-cell mdl-cell--12-col-desktop mdl-cell--8-col-tablet mdl-cell--4-col-phone" style=" text-align: -webkit-center">
+	                		<h5><b>ALL.F1 - ТРАНСЛЯЦИИ ПОДДЕРЖКИ ТУРНИРА БОЛЬШИХ ПРИЗОВ F1</b></h5>
+						</div>
+						</div>
+					</div>
+				</div>
+			
+          		<div class="mdl-cell mdl-cell--bottom    mdl-cell--8-col mdl-cell--4-col-tablet mdl-cell--4-col-phone"
+          		style="padding-bottom: 0px; margin: 0px"><!--  mdl-cell--8-col-desktop mdl-cell--8-col-tablet mdl-cell--2-col-phone"> -->
+	        	    <!-- <div class=" mdl-cell mdl-cell--12-col-desktop "> -->
+	        	    <!-- <div style="display: flex;"> -->
+	                		<img   style="
+	                		 display: block;
+	                		 max-height: 600px;
+  							max-width: 100%"	 src="images/hurum/just_hurum.png">
+					<!-- </div> -->
+					<!-- </div> -->
+				</div>
+				</div>
+			</section>
+        <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--cyan-400"  style="background-image:url(images/f1_foo_bar.jpg); background-size:100% 100%;     background-repeat: no-repeat;
+    background-position: bottom; ">
+          <a href="#info" class="mdl-layout__tab mdl-color-text--grey-100 is-active">ALL.F1</a>
+          <a href="#vanga" class="mdl-layout__tab mdl-color-text--grey-100 ">Конкурс прогнозов</a>
+          <a href="#vanga_results" class="mdl-layout__tab mdl-color-text--grey-100 ">Таблица</a>
+          <a href="#podcasts" class="mdl-layout__tab mdl-color-text--grey-100 ">Подкасты</a>
+        </div>
+      </header>
+      <main class="mdl-layout__content--scroll ">
+        <div class="mdl-layout__tab-panel is-active" id="info">
+          <section class="section--center mdl-grid  mdl-color--grey-800">
+            <header class="section__play-btn mdl-cell mdl-cell--12-col-desktop mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+              <div class="mdl-card__supporting-text  mdl-color--grey-800 mdl-color-text--white" style="text-align: justify; ">
+              <h4>
+                Еженедельные комментарии событий в гонках Формулы 1, свежие новости и разбор полётов, конкурс прогнозов и просто ламповое общение - присоединяйтесь к нам в социальных сетях 
+                <div style="text-align: center;" class="mdl-color-text--yellow-200"><b>#держим_в_курсе</b></div>
+                </h4>
+              </div>
+            </header>
+            <div class="mdl-card mdl-cell mdl-cell--12-col-desktop mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-color--grey-900">
+            	<div class="mdl-grid"  style="display: inline-flex;">
+		            <div class="mdl-card mdl-cell mdl-cell--3-col-desktop mdl-cell--4-col-tablet mdl-cell--2-col-phone mdl-color--grey-900">
+			<a href="https://vk.com/f1comment"  class="social-btn"><img src="images/social/vkontakte.png" class="social-btn-image"></a>
+		            </div>
+		            <div class="mdl-card mdl-cell mdl-cell--3-col-desktop mdl-cell--4-col-tablet mdl-cell--2-col-phone mdl-color--grey-900">
+			<a href="https://www.t.me/allf1"  class="social-btn"><img src="images/social/telegram.png" class="social-btn-image"></a>
+		            </div>
+		            <div class="mdl-card mdl-cell mdl-cell--3-col-desktop mdl-cell--4-col-tablet mdl-cell--2-col-phone mdl-color--grey-900">
+			<a href="#"  class="social-btn"><img src="images/social/facebook.png" class="social-btn-image"></a>
+		            </div>
+		            <div class="mdl-card mdl-cell mdl-cell--3-col-desktop mdl-cell--4-col-tablet mdl-cell--2-col-phone mdl-color--grey-900">
+
+			<a href="https://twitter.com/JustmanHurumbum"  class="social-btn "><img src="images/social/twitter.png" class="social-btn-image"></a>
+		            </div>
+            	</div>
+
+
+            </div>
+          </section>
+        </div>
+
+        <div class="mdl-layout__tab-panel is-active" id="vanga">
+          <section class="section--center mdl-grid  mdl-color--grey-800 " style="background-image: url(images/gp_sochi2k17.jpg); ">
+          <div class=" mdl-color--grey-600 mdl-cell mdl-cell--12-col-desktop mdl-cell--8-col-tablet mdl-cell--4-col-phone" style="flex-direction: column; padding: 0px; opacity: 0.8;">
+            <header class="section__play-btn mdl-cell mdl-cell--12-col-desktop mdl-cell--8-col-tablet mdl-cell--4-col-phone" style="flex-direction: column; padding-bottom: 20px; ">
+              <div class="mdl-card__supporting-text  mdl-color--grey-700 mdl-color-text--cyan-200" style="text-align: center;  ">
+              <h2>ТУРНИР ПРОГНОЗОВ</h2>
+              </div>
+              <div class=" mdl-color-text--grey-100" style="text-align: center; text-shadow: 1px 2px #888895; ">
+              <h4>Заявки на Gran-Prix Сочи принимаются до:</h4>
+              </div>
+              <div class="  mdl-color-text--red-900" style="text-align: center; text-shadow: 1px 3px #CBA195; ">
+              <h3>23:59 27.04.2017</h3>
+              </div>
+            </header>
+            <div class=" mdl-color--grey-900" style="height: 120px; width:100%; text-align: center;text-shadow: 1px 2px #888895; padding-bottom: 30px; ">
+            <h5>
+		            <br></br>
+		            <div class=" mdl-color--grey-900">
+			<a href="https://vk.com/f1comment"  class="social-btn">Правила турнира прогнозов</a>
+		            </div>
+		            <br></br>
+		            <div class="mdl-color--grey-900">
+			<a href="https://www.t.me/allf1"  class="social-btn">Оставить свой прогноз</a>
+		            </div>
+			</h5>
+            </div>
+		</div>
+          </section>
+        </div>
+
+
+        <div class="mdl-layout__tab-panel is-active" id="vanga_results">
+
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp ">
+            <div class="mdl-card mdl-cell mdl-cell--12-col mdl-color-text--cyan-100 mdl-color--grey-900">
+              <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing mdl-color--grey-600">
+                <div>
+                  	                <table id="rating_table" width="100%" class="table table-bordered" cellpadding="0">
+
+                	                </table>
+				</div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+
+        <div class="mdl-layout__tab-panel is-active" id="podcasts">
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp mdl-color--grey-900">
+            <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-900 mdl-color-text--white">
+              <i class="material-icons">play_circle_filled</i>
+            </header>
+            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone mdl-color--grey-900">
+              <div class="mdl-card__supporting-text mdl-color-text--yellow-200">
+                <h2><b>#COMING SOON</b></h2>
+              </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+
+        <footer class="mdl-mega-footer">
+
+          <div class="mdl-mega-footer--bottom-section">
+            <div class="mdl-logo">
+              ©ALL.F1  2017
+            </div>
+            <ul class="mdl-mega-footer--link-list">              
+              <li><a href="#">Made by Vladislav Bogdashkin</a></li>
+            </ul>
+          </div>
+        </footer>
+      </main>
+    </div>
+
+    <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+    <!-- build:js scripts/main.min.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-XXXXX-X', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <!-- Built with love using Web Starter Kit -->
+
+  </body>
+</html>
